@@ -172,30 +172,29 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 5vh;
+  height: 10vh;
   border-bottom: 1.5px dashed #C0C0C0;
 }
 .nav-bar .nav-text {
-  border: 1px solid red;
   height: 100%;
   width: 25%;
   text-align: center;
-  padding-top: 1%;
+  padding-top: 2.5%;
   font-size: 1.2rem;
   color: #212529;
 }
 .nav-bar .nav-links {
-  border: 1px solid red;
   display: flex;
   justify-content: space-evenly;
   height: 100%;
   width: 40%;
   text-align: center;
-  padding-top: 1%;
+  padding-top: 2.5%;
 }
 .nav-bar .nav-links a {
-  border: 1px solid red;
   text-decoration: none;
+  font-size: 2rem;
+  color: #212529;
 }
 .footer {
   width: 100%;
@@ -207,6 +206,18 @@ img {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+header .header-img img {
+  width: 100%;
+}
+header .header-sec .header-sec-top {
+  padding-top: 2%;
+}
+header .header-sec .header-sec-bot {
+  padding-bottom: 2%;
+}
+header .header-sec .header-sec-bot p {
+  line-height: 0.75;
 }
 .home .content-section {
   margin: 30px 0;
