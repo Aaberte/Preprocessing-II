@@ -297,10 +297,19 @@ header .header-sec .header-sec-top {
   .container .content-section {
     flex-direction: column;
   }
-  .container .content-section .content-section.inverse-content {
-    flex-direction: column-reverse;
-  }
   .container .content-section .text-content {
     width: 100%;
+  }
+  .content-pick {
+    flex-direction: column;
+  }
+}
+@media ( max-width: 500px ) {
+  .home .content-pick .destination {
+    width: 100%;
+  }
+  .home .content-pick .destination .btn {
+    width: 500px;
+    justify-content: space-around;
   }
 }

@@ -67,8 +67,7 @@ header {
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
-
-    .destination {
+      .destination {
       width: 30%;
       margin-bottom: 30px;
       .btn {
@@ -81,13 +80,28 @@ header {
 @media @phone {
   .container .content-section {
     flex-direction: column;
-    .content-section.inverse-content {
-      flex-direction: column-reverse;
-    }
-    .text-content {
+      .text-content {
       width: 100%;
+      }//close text content section
+    }//closes container content section
+    .content-pick {
+       flex-direction: column;   
+    }//closes conttent-pick  
+      }//closes media query
+
+@media @phone {
+.home .content-pick{
+  .destination {
+     width: 100%;
+    .btn {
+      width:500px;
+      justify-content: space-around;
+
     }
   }
+} 
 }
+
+
 
 
