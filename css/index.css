@@ -309,7 +309,18 @@ header .header-sec .header-sec-top {
     width: 100%;
   }
   .home .content-pick .destination .btn {
-    width: 500px;
+    width: 450px;
     justify-content: space-around;
+    padding-top: 3%;
+  }
+}
+@media ( max-width: 500px ) {
+  .home .content-section .img-content {
+    width: 100%;
+  }
+}
+@media ( max-width: 500px ) {
+  .home .inverse-content {
+    flex-direction: column-reverse;
   }
 }
