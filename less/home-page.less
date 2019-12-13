@@ -7,6 +7,12 @@ header {
   }//closes header-sec .header-sec-top tag
 }//closes header tag
 
+@media @phone {
+  header .header-sec .header-sec-bot {
+    border-bottom: 2px dashed @navigation-border;
+  }
+}
+
 .home {
 
   .content-section {
@@ -72,5 +78,16 @@ header {
   }
 }// home
 
+@media @phone {
+  .container .content-section {
+    flex-direction: column;
+    .content-section.inverse-content {
+      flex-direction: column-reverse;
+    }
+    .text-content {
+      width: 100%;
+    }
+  }
+}
 
 
