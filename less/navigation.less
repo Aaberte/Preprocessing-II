@@ -1,6 +1,5 @@
 // Navigation Styles here
 .nav-bar {
-    border: 1px solid black;
     display:flex;
     justify-content: space-around;
     align-items: center;
@@ -9,7 +8,6 @@
     width: 85%;
     margin: 0% auto;
     .nav-text {
-        border: 1px solid black;
         height: 100%;
         width: 25%;
         text-align: center;
@@ -18,7 +16,6 @@
         color: @shark;
     }//closes nav-text
     .nav-links {
-        border: 1px solid black;
         display:flex;
         justify-content: space-evenly;
         height: 100%;
@@ -32,3 +29,18 @@
         }//closes anchor tag 
     }//closes nav-links
 }//closes nav bar 
+
+@media @phone {
+    .nav-bar {
+        flex-direction: column;
+        width: 100%;
+        .nav-text {
+            width: 100%;
+        }
+        .nav-links {
+            color: blue;
+            width: 100%;
+        }
+    }
+}
+
