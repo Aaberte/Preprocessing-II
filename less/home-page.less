@@ -1,3 +1,18 @@
+header {
+  .header-img img {
+    width: 100%;
+  }//closes header-img img tag
+  .header-sec .header-sec-top {
+    padding-top: 2%;
+  }//closes header-sec .header-sec-top tag
+}//closes header tag
+
+@media @phone {
+  header .header-sec .header-sec-bot {
+    border-bottom: 2px dashed @navigation-border;
+  }
+}
+
 .home {
 
   .content-section {
@@ -52,10 +67,51 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
-
-    .destination {
+      .destination {
       width: 30%;
       margin-bottom: 30px;
-    }
+      .btn {
+        .custom-button(@button-bg, 200px, white)
+      }//closes button tag
+    }//closes content destination tag
   }
 }// home
+
+@media @phone {
+  .container .content-section {
+    flex-direction: column;
+      .text-content {
+      width: 100%;
+      }//close text content section
+    }//closes container content section
+    .content-pick {
+       flex-direction: column;   
+    }//closes conttent-pick  
+      }//closes media query
+
+@media @phone {
+.home .content-pick{
+  .destination {
+     width: 100%;
+    .btn {
+      width:450px;
+      justify-content: space-around;
+      padding-top: 3%;
+    }
+  }
+} 
+}
+
+@media @phone {
+  .home .content-section .img-content {
+    width: 100%;
+      }
+}
+
+@media @phone {
+  .home .inverse-content {
+    flex-direction: column-reverse;
+  }
+}
+
+
